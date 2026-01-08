@@ -272,13 +272,21 @@ int getBestScore() {
           if (event is KeyDownEvent) {
             final key = event.logicalKey;
             if (key == LogicalKeyboardKey.arrowUp ||
-                key == LogicalKeyboardKey.keyW) changeDirection('up');
+                key == LogicalKeyboardKey.keyW) {
+              changeDirection('up');
+            }
             if (key == LogicalKeyboardKey.arrowDown ||
-                key == LogicalKeyboardKey.keyS) changeDirection('down');
+                key == LogicalKeyboardKey.keyS) {
+              changeDirection('down');
+            }
             if (key == LogicalKeyboardKey.arrowLeft ||
-                key == LogicalKeyboardKey.keyA) changeDirection('left');
+                key == LogicalKeyboardKey.keyA) {
+              changeDirection('left');
+            }
             if (key == LogicalKeyboardKey.arrowRight ||
-                key == LogicalKeyboardKey.keyD) changeDirection('right');
+                key == LogicalKeyboardKey.keyD) {
+              changeDirection('right');
+            }
           }
           return KeyEventResult.handled;
         },

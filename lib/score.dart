@@ -47,7 +47,7 @@ class ScoreList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         child: DataTable(
           columnSpacing: 16,
-          headingRowColor: MaterialStateColor.resolveWith(
+          headingRowColor: WidgetStateColor.resolveWith(
               (states) => Colors.green.withOpacity(0.3)),
           columns: const [
             DataColumn(
